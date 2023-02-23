@@ -1,5 +1,5 @@
 /**
- * main - This function prints the size of the various data types
+ * main - This function prints the sizes of the various data types
  * Return: This returns 0 for success
  */
 #include <stdio.h>
