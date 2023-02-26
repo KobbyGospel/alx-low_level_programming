@@ -1,35 +1,35 @@
 #include <stdio.h>
 /**
-  * main - a program to print possible combination of
-  * two digits
-  * Return: 0 (success)
-  */
+ * main - function that prints combination of 3 digits
+ *
+ * Return: 0 (success)
+ */
 int main(void)
 {
 	int i;
 	int j;
+	int k;
 
-	j = 0;
-	while (j < 10)
+	for (i = '0'; i < '9'; i++)
 	{
-		i = 0;
-		while (i < 10)
+		for (j = i + 1; j <= '9'; j++)
 		{
-			if (j != i && j < i)
+			for (k = j + 1; k <= '9'; k++)
 			{
-				putchar('0' + j);
-				putchar('0' + i);
-
-				if (i + j != 17)
+				if ((i != j) != k)
 				{
-					putchar(44);
-					putchar(32);
+					putchar(i);
+					putchar(j);
+					putchar(k);
+					if (i == '7' && j == '8')
+						continue;
+					putchar(',');
+					putchar(' ');
 				}
 			}
-			i++;
 		}
-		j++;
 	}
-	putchar(10);
+	putchar('\n');
+
 	return (0);
 }
