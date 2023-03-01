@@ -1,8 +1,9 @@
-/** reset_to_98 - a function to reset the value of an int
-  * n: a pointer to integer we want to set 98
-  *
-  * Return: Returns nothing
-  */
+/**
+ * reset_to_98 - funtion to reset the value of an int
+ * @n: Pointer to integer to set 98
+ *
+ * Return: returns nothing
+ */
 
 void reset_to_98(int *n)
 {
